@@ -1,0 +1,28 @@
+/* src/pages/ContactPage.css */
+
+.contact-page {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+  }
+  
+  .contact-content {
+    background-color: #1a202c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 184, 230, 0.3);
+    line-height: 1.7;
+  }
+  
+  .contact-page h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .contact-page p {
+    color: var(--text-color);
+  }

@@ -1,0 +1,48 @@
+/* src/pages/HomePage.css */
+
+.homepage {
+    text-align: center;
+    color: #f0f2f5;
+  }
+  
+  .homepage-hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f172a, #1a202c);
+    border-bottom: 2px solid #00e6db;
+    margin-bottom: 40px;
+  }
+  
+  .homepage-hero h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(0, 184, 230, 0.5);
+  }
+  
+  .homepage-subtitle {
+    font-size: 1.5em;
+    color: #c7c7c7;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .homepage-intro {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .homepage-intro h2 {
+    font-size: 2.5em;
+    color: #00e6db;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .homepage-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+  }

@@ -1,0 +1,21 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #0b0f1a;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 1px solid #222;
+  }
+
+  .font-header {
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .font-body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }

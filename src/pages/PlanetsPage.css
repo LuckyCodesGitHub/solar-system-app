@@ -1,0 +1,31 @@
+/* src/pages/PlanetsPage.css */
+
+.planets-page {
+    padding: 40px 20px;
+    text-align: center;
+    color: #f0f2f5;
+  }
+  
+  .planets-page h2 {
+    font-size: 3em;
+    color: #00e6db;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(0, 184, 230, 0.5);
+  }
+  
+  .planet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .font-header {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .font-body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }

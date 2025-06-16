@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 142.3 124.7">
+  <defs>
+    <linearGradient id="a" x1="28.56%" y1="12.01%" x2="100%" y2="83.89%">
+      <stop offset="0%" stop-color="#41D1FF"/>
+      <stop offset="100%" stop-color="#41D1FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b" x1="14.33%" y1="38.74%" x2="70.52%" y2="85.73%">
+      <stop offset="0%" stop-color="#41D1FF"/>
+      <stop offset="100%" stop-color="#41D1FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="c" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF5100"/>
+      <stop offset="100%" stop-color="#FF5100" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="d" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#314B8C"/>
+      <stop offset="100%" stop-color="#314B8C" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M71.15 0L142.3 123.7H0L71.15 0Z" fill="#FFF"/>
+  <path d="M71.15 0L142.3 123.7H0L71.15 0Z" fill="url(#a)"/>
+  <path d="M71.15 0L0 123.7h142.3L71.15 0Z" fill="url(#b)"/>
+  <path d="M71.15 0L142.3 123.7H0L71.15 0Z" fill="url(#c)"/>
+  <path d="M71.15 0L0 123.7h142.3L71.15 0Z" fill="url(#d)"/>
+</svg>
