@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Set your GitHub repository name here
-const repoName = 'solar-system-app'; // <-- Make sure this matches your GitHub repo name exactly!
+const repoName = 'solar-system-app'; // <-- THIS MUST MATCH YOUR GITHUB REPO NAME EXACTLY (case-sensitive)
 
 export default defineConfig({
   plugins: [react()],
-  base: `/${repoName}/`, // <--- ADD or CHANGE THIS LINE
+  base: `/${repoName}/`, // <-- THIS IS THE CRITICAL LINE
 })
