@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # This workflow runs when you push to the 'main' branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Uses a fresh Ubuntu environment for each run
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4 # Checks out your repository
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or '22' - use a recent LTS version that matches what you have
+          cache: 'npm' # Caches npm dependencies to speed up builds
+
+      - name: Install Dependencies
+        run: npm install # Installs project dependencies
+
+      - name: Build Project
+        run: npm run build # Runs your Vite build command
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub's built-in token
+          publish_dir: ./dist # The folder to deploy (your built app)
+          cname: '' # Leave blank unless you have a custom domain
