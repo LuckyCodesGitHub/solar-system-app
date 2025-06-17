@@ -12,7 +12,7 @@ function HomePage() {
         <p className="homepage-subtitle">A quick information page on the Solar System</p>
       </header>
       <section className="homepage-intro">
-        <h2>jayden is fat :]!</h2>
+        <h2>Welcome to the Solar System Explorer!</h2>
         <p>
           Explore the wonderful world of our Solar System
         </p>
