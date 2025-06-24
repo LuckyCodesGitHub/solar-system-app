@@ -26,6 +26,5 @@ function HomePage() {
 
 export default HomePage;
 
-src/pages/HomePage.jsx
 
 

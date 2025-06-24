@@ -23,8 +23,7 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        {/* <ParticlesBackground /> */}
-
+      
         <Navbar />
         <main className="main-content">
           <Routes>

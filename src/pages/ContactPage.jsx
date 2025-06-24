@@ -1,38 +1,71 @@
 import React from 'react';
 
-function ContactPage() {
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-gray-900 to-black font-inter">
-      <div className="bg-gray-800 bg-opacity-70 backdrop-blur-sm p-8 rounded-xl shadow-2xl border border-cyan-500 max-w-lg w-full text-center">
-        <h2 className="text-3xl font-extrabold text-cyan-400 mb-8 tracking-wide">Contact Us</h2>
+    <div className="min-h-screen text-white flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 font-mono">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-10 md:mb-12 text-teal-400 drop-shadow-[0_0_8px_rgba(0,255,255,0.7)]">
+        Contact Us
+      </h1>
 
-        <div className="space-y-6">
+      <div className="bg-gray-900 border border-teal-500 rounded-xl shadow-lg p-6 sm:p-8 md:p-10 lg:p-12 w-full max-w-md text-center">
+        <p className="text-lg sm:text-xl text-gray-200 mb-6 leading-relaxed">
+          We'd love to hear from you! Please fill out the form below.
+        </p>
+
+        <form className="space-y-4 text-left">
           <div>
-            <label htmlFor="email" className="block text-lg font-medium text-gray-300 mb-2">
-              Your Email
+            <label htmlFor="name" className="block text-base font-medium text-gray-200 mb-1">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="mt-1 block w-full px-4 py-2 bg-gray-800 border border-teal-600 rounded-lg shadow-sm focus:ring-teal-500 focus:border-teal-500 text-teal-200 placeholder-gray-500 sm:text-base transition duration-300 ease-in-out hover:border-teal-400"
+              placeholder="Your Name"
+              aria-label="Name"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="email" className="block text-base font-medium text-gray-200 mb-1">
+              Email
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full p-3 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-lg text-gray-100 placeholder-gray-400 focus:ring-2 focus:ring-cyan-500 focus:border-transparent outline-none transition-all duration-200"
-              placeholder="placeholder@example.com"
-
+              className="mt-1 block w-full px-4 py-2 bg-gray-800 border border-teal-600 rounded-lg shadow-sm focus:ring-teal-500 focus:border-teal-500 text-teal-200 placeholder-gray-500 sm:text-base transition duration-300 ease-in-out hover:border-teal-400"
+              placeholder="you@example.com"
+              aria-label="Email"
             />
+          </div>
+
+          <div>
+            <label htmlFor="message" className="block text-base font-medium text-gray-200 mb-1">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              className="mt-1 block w-full px-4 py-2 bg-gray-800 border border-teal-600 rounded-lg shadow-sm focus:ring-teal-500 focus:border-teal-500 text-teal-200 placeholder-gray-500 sm:text-base resize-y transition duration-300 ease-in-out hover:border-teal-400"
+              placeholder="Your message to us..."
+              aria-label="Message"
+            ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full flex items-center justify-center px-6 py-3 bg-cyan-600 text-white font-bold rounded-lg shadow-lg hover:bg-cyan-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-500 focus:ring-opacity-50"
+            className="w-full bg-teal-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-gray-900 text-lg font-semibold transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+            onClick={(e) => e.preventDefault()}
           >
-            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-            Submit
+            Send Message
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
-}
+};
 
-export default ContactPage;
-
+export default App;
