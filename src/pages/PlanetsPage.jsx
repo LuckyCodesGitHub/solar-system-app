@@ -5,7 +5,7 @@ import { solarSystemData } from '../data/solarSystemData';
 import './PlanetsPage.css';
 
 function PlanetsPage() {
-  const planets = solarSystemData.filter(item => item.type === 'planet'); // <--- THIS LINE IS CRUCIAL
+  const planets = solarSystemData.filter(item => item.type === 'planet'); 
 
   return (
     <div className="planets-page font-header">

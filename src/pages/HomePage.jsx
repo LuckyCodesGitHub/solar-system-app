@@ -1,7 +1,8 @@
 // src/pages/HomePage.jsx
 
 import React from 'react';
-import AnimatedTitle from '../components/AnimatedTitle';
+import AnimatedTitle from '../components/AnimatedTitle.jsx';
+import ImageSlider from '../components/ImageSlider.jsx';
 import './HomePage.css';
 
 function HomePage() {
@@ -20,6 +21,7 @@ function HomePage() {
           From the small and hot planet of Mercury to the coldest and furthest planet in our Solar System, you can get information of them all!
         </p>
       </section>
+      <ImageSlider />
     </div>
   );
 }
